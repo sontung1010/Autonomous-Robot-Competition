@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.dp
+"pwmvideo\startup_stm32f767xx.o"
+"pwmvideo\main.o"
+"pwmvideo\stm32f7xx_it.o"
+"pwmvideo\stm32f7xx_hal_msp.o"
+"pwmvideo\stm32f7xx_hal_cortex.o"
+"pwmvideo\stm32f7xx_hal_tim.o"
+"pwmvideo\stm32f7xx_hal_tim_ex.o"
+"pwmvideo\stm32f7xx_hal_rcc.o"
+"pwmvideo\stm32f7xx_hal_rcc_ex.o"
+"pwmvideo\stm32f7xx_hal_flash.o"
+"pwmvideo\stm32f7xx_hal_flash_ex.o"
+"pwmvideo\stm32f7xx_hal_gpio.o"
+"pwmvideo\stm32f7xx_hal_dma.o"
+"pwmvideo\stm32f7xx_hal_dma_ex.o"
+"pwmvideo\stm32f7xx_hal_pwr.o"
+"pwmvideo\stm32f7xx_hal_pwr_ex.o"
+"pwmvideo\stm32f7xx_hal.o"
+"pwmvideo\stm32f7xx_hal_i2c.o"
+"pwmvideo\stm32f7xx_hal_i2c_ex.o"
+"pwmvideo\stm32f7xx_hal_exti.o"
+"pwmvideo\system_stm32f7xx.o"
+--strict --scatter "PWMVideo\PWMVideo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWMVideo.map" -o PWMVideo\PWMVideo.axf
